@@ -1,4 +1,5 @@
 # dependencies
+/Frontend/pet-app/.next
 /Frontend/pet-app/node_modules
 /node_modules
 /.pnp
