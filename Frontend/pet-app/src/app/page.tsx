@@ -1,4 +1,5 @@
 import { Tareas } from "../components/tareas/tareas";
+import { ProximasTareas } from "../components/tareas/proximasTareas";
 
 const mock = [
   {
@@ -8,7 +9,7 @@ const mock = [
   },
   {
     tarea: "Dar pastilla",
-    isCheck: false,
+    isCheck: true,
     id: "lkasdjie-lasdflka",
   },
   {
@@ -18,10 +19,32 @@ const mock = [
   },
 ];
 
+const mockProximas = [
+  {
+    tarea: "Llevar al verterinario",
+    isCheck: false,
+    id: "alksda3jf-asdlfkja",
+    date: "Lunes 9 Dic",
+  },
+  {
+    tarea: "Dar pastilla",
+    isCheck: true,
+    id: "lkas123djie-lasdflka",
+    date: "Martes 10 Dic",
+  },
+  {
+    tarea: "sacar a pasear",
+    isCheck: false,
+    id: "laks31jdf-lskdjf",
+    date: "Jueves 9 Ene",
+  },
+];
+
 export default function Home() {
   return (
     <>
       <Tareas data={mock}></Tareas>
+      <ProximasTareas data={mockProximas}></ProximasTareas>
     </>
   );
 }

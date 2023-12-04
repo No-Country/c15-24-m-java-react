@@ -1,12 +1,16 @@
 import styles from "./tareas.module.css";
 
+interface Tarea {
+  tarea: string;
+  isCheck: boolean;
+  id: string;
+}
+
 interface Tareas {
-  data: number[];
+  data: Tarea[];
 }
 
 export const Tareas = ({ data }: Tareas) => {
-  console.log(data);
-
   return (
     <div className={styles.containerTareas}>
       <div>
@@ -17,7 +21,7 @@ export const Tareas = ({ data }: Tareas) => {
         <div className={styles.containerCheck}>
           {data.map((object) => {
             return (
-              <div className={styles.checkbox}>
+              <div key={object.id} className={styles.checkbox}>
                 <input
                   id={object.id}
                   className={styles.inputCheckbox}
