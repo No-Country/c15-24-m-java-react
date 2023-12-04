@@ -1,5 +1,6 @@
 import { Tareas } from "../components/tareas/tareas";
 import { ProximasTareas } from "../components/tareas/proximasTareas";
+import { Navbar } from "../components/navbar/navbar";
 
 const mock = [
   {
@@ -43,6 +44,7 @@ const mockProximas = [
 export default function Home() {
   return (
     <>
+      <Navbar></Navbar>
       <Tareas data={mock}></Tareas>
       <ProximasTareas data={mockProximas}></ProximasTareas>
     </>

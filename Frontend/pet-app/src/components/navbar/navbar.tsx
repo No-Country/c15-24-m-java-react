@@ -10,15 +10,15 @@ export const Navbar = () => {
       <h3 className={styles.nombreUser}>Usuario</h3>
       <ul className={styles.containerLinks}>
         <Link href="/mascotas" className={styles.link}>
-          <img className={styles.point} src={point.src} alt="punto negro" />
+          <span className={styles.point}></span>
           <p className={styles.linkText}>Mis mascotas</p>
         </Link>
         <Link href="/calendario" className={styles.link}>
-          <img className={styles.point} src={point.src} alt="punto negro" />
+          <span className={styles.point}></span>
           <p className={styles.linkText}>Calendario</p>
         </Link>
         <Link href="/contactos" className={styles.link}>
-          <img className={styles.point} src={point.src} alt="punto negro" />
+          <span className={styles.point}></span>
           <p className={styles.linkText}>Contactos</p>
         </Link>
       </ul>
