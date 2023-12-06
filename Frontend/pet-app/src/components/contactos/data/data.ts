@@ -38,3 +38,20 @@ export const veterinarios = [
         horario: '6pm-10pm'
     },
 ]
+
+export const cuidadores = [
+    {
+        id: 0,
+        nombre: 'Guillermo Sandoval',
+        tel: '33529936521',
+        direccion: 'Ejercito Mexicano',
+        horario: '3am-2pm'
+    },
+    {
+        id: 1,
+        nombre: 'Roberto Hernandez',
+        tel: '662143234',
+        direccion: 'Ejercito Nacional',
+        horario: '6pm-10pm'
+    },
+]
