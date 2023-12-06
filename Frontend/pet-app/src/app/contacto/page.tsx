@@ -5,9 +5,13 @@ import { familia, veterinarios } from '@/components/contactos/data/data'
 import { cuidadores } from '../../components/contactos/data/data';
 import { OpenMod } from "@/components/contactos/OpenMod";
 
-export default function ContactPage() {
 
-  
+export const metadata = {
+ title: 'Agenda de contactos',
+ description: 'Esta página es una agenda de contactos',
+};
+
+export default function ContactPage() {
 
   return (
     <div className="container w-10/12 mx-auto mt-20 flex flex-col mb-20">
