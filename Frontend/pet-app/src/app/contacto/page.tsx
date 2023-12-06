@@ -5,8 +5,8 @@ import { Familia } from "@/components/contactos/Familia";
 import { Veterinarios } from "@/components/contactos/Veterinarios";
 import { familia, veterinarios } from '@/components/contactos/data/data'
 import { cuidadores } from '../../components/contactos/data/data';
-import Modal from '@/components/Modal'
-import FormUser from '@/components/FormUser'
+import Modal from '@/components/contactos/Modal'
+import FormUser from '@/components/contactos/FormUser'
 import { useState } from "react";
 
 export default function ContactPage() {
