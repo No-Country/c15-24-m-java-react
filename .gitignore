@@ -7,7 +7,7 @@
 .yarn/install-state.gz
 /package-lock.json
 
-# testings
+# testing
 /coverage
 
 # next.js
