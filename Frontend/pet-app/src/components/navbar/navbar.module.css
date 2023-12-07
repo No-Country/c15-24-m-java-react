@@ -1,13 +1,15 @@
 .containerNav {
   height: 100vh;
   width: 270px;
-  background-color: white;
+  background-color: rgba(234, 242, 234, 0.753);
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
+  position: fixed;
+  z-index: 10;
 }
 
 .imgLogo {
