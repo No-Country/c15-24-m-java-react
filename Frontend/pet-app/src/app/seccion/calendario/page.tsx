@@ -1,7 +1,7 @@
 import { ProximasTareas } from "@/components/tareas/proximasTareas";
 import { Tareas } from "@/components/tareas/tareas";
 import React from "react";
-import { CalendarioComponent } from "../../components/calendario/calendario";
+import { CalendarioComponent } from "@/components/calendario/calendario";
 import styles from "./page.module.css";
 
 const mock = [

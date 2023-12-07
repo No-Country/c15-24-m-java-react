@@ -2,7 +2,7 @@ import { Cuidadores } from "@/components/contactos/Cuidadores";
 import { Familia } from "@/components/contactos/Familia";
 import { Veterinarios } from "@/components/contactos/Veterinarios";
 import { familia, veterinarios } from "@/components/contactos/data/data";
-import { cuidadores } from "../../components/contactos/data/data";
+import { cuidadores } from "@/components/contactos/data/data";
 import { OpenMod } from "@/components/contactos/OpenMod";
 import { NuevoGasto } from "@/components/NuevoGasto/NuevoGasto";
 
