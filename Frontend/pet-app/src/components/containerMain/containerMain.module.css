@@ -1,0 +1,9 @@
+.containerMain {
+  color: white;
+  position: absolute;
+  left: 270px;
+  top: 60px;
+  width: calc(100vw - 270px);
+  height: calc(100vh - 60px);
+  background-color: red;
+}

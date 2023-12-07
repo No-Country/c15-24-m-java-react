@@ -1,0 +1,9 @@
+.containerCalendario {
+  width: max-content;
+  height: 100%;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
