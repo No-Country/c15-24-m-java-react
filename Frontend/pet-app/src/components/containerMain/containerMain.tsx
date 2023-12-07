@@ -1,4 +1,4 @@
-import styles from "./ContainerMain.module.css";
+import styles from "./containerMain.module.css";
 import { ReactNode } from "react";
 
 export const ContainerMain = ({ children }: { children: ReactNode }) => {
