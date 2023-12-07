@@ -1,5 +1,10 @@
 import React from "react";
+import { SectionMascotas } from "../../components/SectionMascotas/SectionMascotas";
 
 export default function Mascotas() {
-  return <div>Mascotas</div>;
+  return (
+    <div>
+      <SectionMascotas />
+    </div>
+  );
 }

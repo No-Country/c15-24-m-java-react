@@ -1,6 +1,6 @@
 .containerCalendario {
   width: max-content;
-  height: 100%;
+  height: calc(100vh - 60px);
   background-color: blue;
   display: flex;
   align-items: center;

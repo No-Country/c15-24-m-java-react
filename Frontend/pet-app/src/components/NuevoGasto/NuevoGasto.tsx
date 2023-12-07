@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import cerrar from "../../../../public/images/cerrar.png";
-import agregar from "../../../../public/images/boton agregar.svg";
+import cerrar from "../../../public/images/cerrar.png";
+import agregar from "../../../public/images/boton agregar.svg";
 import styles from "./NuevoGasto.module.css";
 
-const NuevoGasto = () => {
+export const NuevoGasto = () => {
   const [addGasto, setAddgasto] = useState<boolean>(false);
   const toggleForm = (): void => {
     setAddgasto(!addGasto);
@@ -96,5 +96,3 @@ const NuevoGasto = () => {
     </div>
   );
 };
-
-export default NuevoGasto;
