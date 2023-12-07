@@ -1,9 +1,5 @@
 import { NuevoGasto } from "@/components/NuevoGasto/NuevoGasto";
 
 export default function Home() {
-  return (
-    <>
-      <NuevoGasto />
-    </>
-  );
+  return <>ESTA PAGINA TENDRIA QUE SER EL LOGIN</>;
 }
