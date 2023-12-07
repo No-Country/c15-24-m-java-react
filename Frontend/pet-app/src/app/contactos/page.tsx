@@ -4,6 +4,7 @@ import { Veterinarios } from "@/components/contactos/Veterinarios";
 import { familia, veterinarios } from "@/components/contactos/data/data";
 import { cuidadores } from "../../components/contactos/data/data";
 import { OpenMod } from "@/components/contactos/OpenMod";
+import { NuevoGasto } from "@/components/NuevoGasto/NuevoGasto";
 
 export const metadata = {
   title: "Agenda de contactos",
@@ -24,6 +25,7 @@ export default function ContactPage() {
 
         <OpenMod />
       </div>
+      <NuevoGasto />
     </div>
   );
 }
