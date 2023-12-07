@@ -1,6 +1,7 @@
 import Input from "@/components/login/input";
 import { BtnRecuperar } from "./BtnRecuperar";
 import { BtnRegistrar } from "./BtnRegistrar";
+import Button from "./button";
 
 
 const Form = () => {
@@ -21,6 +22,7 @@ const Form = () => {
           <BtnRecuperar /> 
           <BtnRegistrar />
         </div>
+        <Button type='submit' label='Login' />
       </form>
     </div>
   );
