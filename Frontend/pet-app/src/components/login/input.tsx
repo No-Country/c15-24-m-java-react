@@ -5,7 +5,7 @@ import { cn } from "@/utils/utils";
 import { RiLockLine, RiLockUnlockLine } from "react-icons/ri";
 
 interface InputProps {
-  type: "text" | "password";
+  type: "text" | "password" | "email" ;
   placeholder: string;
   className?: string;
 }
