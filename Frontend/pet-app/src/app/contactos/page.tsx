@@ -1,18 +1,16 @@
 import { Cuidadores } from "@/components/contactos/Cuidadores";
 import { Familia } from "@/components/contactos/Familia";
 import { Veterinarios } from "@/components/contactos/Veterinarios";
-import { familia, veterinarios } from '@/components/contactos/data/data'
-import { cuidadores } from '../../components/contactos/data/data';
+import { familia, veterinarios } from "@/components/contactos/data/data";
+import { cuidadores } from "../../components/contactos/data/data";
 import { OpenMod } from "@/components/contactos/OpenMod";
 
-
 export const metadata = {
- title: 'Agenda de contactos',
- description: 'Esta página es una agenda de contactos',
+  title: "Agenda de contactos",
+  description: "Esta página es una agenda de contactos",
 };
 
 export default function ContactPage() {
-
   return (
     <div className="container w-10/12 mx-auto mt-20 flex flex-col mb-20">
       <h1 className="text-5xl">Contactos</h1>
@@ -22,10 +20,9 @@ export default function ContactPage() {
           <Veterinarios data={veterinarios} />
           <Cuidadores data={cuidadores} />
         </div>
-        <Familia data={familia}/>
+        <Familia data={familia} />
 
         <OpenMod />
-
       </div>
     </div>
   );
