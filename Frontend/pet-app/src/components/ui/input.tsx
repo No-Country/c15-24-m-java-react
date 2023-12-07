@@ -7,7 +7,7 @@ import { RiLockLine, RiLockUnlockLine } from "react-icons/ri";
 interface InputProps {
   type: "text" | "password";
   placeholder: string;
-  className: string;
+  className?: string;
 }
 
 const Input: FC<InputProps> = ({ type, placeholder, className }) => {
