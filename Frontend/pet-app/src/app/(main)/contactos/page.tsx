@@ -23,7 +23,7 @@ export default function ContactPage() {
         </div>
         <Familia data={familia} />
 
-        <OpenMod />
+        
       </div>
       <NuevoGasto />
     </div>
