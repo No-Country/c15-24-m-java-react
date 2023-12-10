@@ -1,0 +1,28 @@
+.modal{
+   background-color: rgba(0, 0, 0, 0.781);
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+}
+
+.animationForm{
+   transform: translateY(800px);
+   animation-name: slideUp;
+   animation-duration: .2s;
+   animation-fill-mode: forwards;
+   transition: transform  ease-in-out;
+
+}
+
+@keyframes slideUp {
+    from {
+      transform: translateY(800px);
+      visibility: hidden;
+    }
+    to {
+      transform: translateY(0);
+   
+    }
+   }

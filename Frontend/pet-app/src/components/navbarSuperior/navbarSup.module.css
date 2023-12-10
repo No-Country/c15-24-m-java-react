@@ -1,0 +1,17 @@
+.containerNavSup {
+  height: 60px;
+  width: calc(100vw - 270px);
+  position: fixed;
+  left: 270px;
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+  color: white;
+}
+
+.containerBtns {
+  display: flex;
+  gap: 15px;
+  margin-right: 60px;
+}

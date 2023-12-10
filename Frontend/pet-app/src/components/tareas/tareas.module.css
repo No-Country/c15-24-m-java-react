@@ -1,0 +1,46 @@
+.containerTareas {
+  width: fit-content;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  background-color: #d9d9d9;
+  width: 280px;
+  font-weight: 500;
+  padding: 5px;
+}
+.circulo {
+  width: 15px;
+  height: 15px;
+  background-color: #a49b9b;
+  border-radius: 50%;
+  margin-bottom: 2px;
+  margin-left: 10px;
+}
+
+.containerCheck {
+  margin-top: 15px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-left: 25px;
+}
+
+.fecha {
+  font-weight: 600;
+  margin-left: 15px;
+  margin-top: 15px;
+}

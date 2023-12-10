@@ -1,0 +1,16 @@
+.containerCalendarioPage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.asideTareas {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  justify-content: center;
+  padding: 10px;
+}

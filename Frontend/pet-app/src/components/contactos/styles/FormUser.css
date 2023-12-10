@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+label {
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+@media (min-width: 768px) {
+  label {
+    font-size: 1rem;
+  }
+}
+input,
+textarea {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+  padding: 3px;
+  outline: none;
+  margin-top: 0.1rem;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  input,
+  textarea {
+    font-size: 1rem;
+    padding: 5px;
+  }
+}
+input:focus,
+textarea:focus {
+  border: none;
+  border: 1px solid blue;
+  box-shadow: 0px -1px 9px 1px rgba(61, 49, 224, 0.75);
+}
+.form__title {
+  font-size: 3rem;
+  color: blue;
+  margin-bottom: 2rem;
+}
+.form {
+  z-index: 200;
+}
+.form__box {
+  font-size: 0.5rem;
+}
+.form__btn {
+  padding: 3px;
+  height: 2rem;
+  background-color: #555a88;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  transition: background-color 300ms;
+  font-size: 0.8rem;
+  width: 60%;
+  margin: 1rem auto 0 auto;
+  transition: background-color 300ms;
+}
+@media (min-width: 768px) {
+  .form__btn {
+    padding: 5px;
+    font-size: 1rem;
+    margin: 2rem auto 0 auto;
+  }
+}
+.form__btn:hover {
+  background-color: #1c1e2d;
+}
+.aus {
+  font-family: "Lato", sans-serif;
+  display: inline;
+}

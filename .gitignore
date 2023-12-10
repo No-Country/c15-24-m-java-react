@@ -1,9 +1,11 @@
 # dependencies
+/Frontend/pet-app/.next
 /Frontend/pet-app/node_modules
 /node_modules
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+/package-lock.json
 
 # testing
 /coverage
