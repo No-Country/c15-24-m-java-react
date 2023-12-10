@@ -9,7 +9,7 @@ export const BtnRecuperar = () => {
 
   return (
     <button type="button" className="text-grey-500" onClick={() => router.push('/recover')}>
-            Olvidaste la contraseña?
+            Olvidé mi contraseña
     </button>
   )
 }
