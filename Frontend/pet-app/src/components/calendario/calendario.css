@@ -187,6 +187,17 @@
 /* FECHAS MARCADAS */
 
 .fecha-marcada {
-  background: yellow;
   color: black;
+  position: relative;
+}
+
+.fecha-marcada::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  position: absolute;
+  border-radius: 50%;
+  top: 5px;
+  right: 100;
 }

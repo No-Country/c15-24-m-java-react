@@ -1,11 +1,15 @@
 "use client";
 
-import { useState } from "react";
 import "../calendario/calendario.css";
 import Calendar from "react-calendar";
 
 export const CalendarioComponent = () => {
-  const fechasMarcadas = ["2024-01-01", "2024-02-14", "2024-12-25"];
+  const fechasMarcadas = [
+    "2024-01-01",
+    "2024-02-14",
+    "2024-12-25",
+    "2024-04-16",
+  ];
 
   return (
     <div className={"containerCalendario"}>
