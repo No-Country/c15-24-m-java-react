@@ -1,5 +1,24 @@
-import styles from "../calendario/calendario.module.css";
+"use client";
+
+import { useState } from "react";
+import "../calendario/calendario.css";
+import Calendar from "react-calendar";
 
 export const CalendarioComponent = () => {
-  return <div className={styles.containerCalendario}>Calendario</div>;
+  const fechasMarcadas = ["2024-01-01", "2024-02-14", "2024-12-25"];
+
+  return (
+    <div className={"containerCalendario"}>
+      <Calendar
+        tileClassName={({ date, view }) => {
+          // Convertir la fecha a un string en el formato 'YYYY-MM-DD'
+          const fechaString = date.toISOString().split("T")[0];
+          // Verificar si la fecha está en el array de fechas marcadas
+          if (fechasMarcadas.includes(fechaString)) {
+            return "fecha-marcada";
+          }
+        }}
+      />
+    </div>
+  );
 };
