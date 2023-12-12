@@ -3,9 +3,26 @@
   height: calc(100vh - 60px);
   background-color: blue;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+}
+
+.navigation_calendar {
+  display: flex;
+  gap: 15px;
+  justify-self: flex-start;
+  width: 100%;
+}
+
+.navigate_title {
+  text-transform: capitalize;
+  font-size: 36px;
+  width: 300px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
 }
 
 /* CONTENEDOR */
@@ -19,7 +36,18 @@
   color: black;
   font-weight: 600;
   padding: 50px;
+  background-color: transparent;
+  border: none;
 }
+
+/* NUMEROS */
+.react-calendar__tile:enabled {
+  width: 150px;
+  height: 90px;
+  font-size: 15px;
+}
+
+/* /////////////////////////////////////////////////////////// */
 
 .react-calendar--doubleView {
   width: 700px;
@@ -58,6 +86,7 @@
   display: flex;
   height: 44px;
   margin-bottom: 1em;
+  display: none;
 }
 
 .react-calendar__navigation button {
@@ -86,6 +115,11 @@
 .react-calendar__month-view__weekdays__weekday {
   padding: 0.5em;
   user-select: none;
+  font-size: 15px;
+  color: #ae7565;
+  padding: 10px;
+  background-color: grey;
+  border-radius: 20px;
 }
 
 .react-calendar__month-view__weekNumbers .react-calendar__tile {
@@ -114,7 +148,6 @@
 
 /* DIAS RESTANTES */
 .react-calendar__month-view__days__day--weekend {
-  color: #ff0202;
 }
 
 /* DIAS ANTERIORES */
@@ -127,6 +160,10 @@
 .react-calendar__decade-view .react-calendar__tile,
 .react-calendar__century-view .react-calendar__tile {
   padding: 2em 0.5em;
+}
+
+.react-calendar__tile {
+  background-color: black;
 }
 
 /* FONDO DIAS */
@@ -171,8 +208,6 @@
 }
 
 .react-calendar__tile--active {
-  background: #006edc;
-  color: white;
 }
 
 .react-calendar__tile--active:enabled:hover,
