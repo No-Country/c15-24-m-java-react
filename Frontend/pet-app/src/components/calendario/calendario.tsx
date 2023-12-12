@@ -3,6 +3,9 @@
 import "../calendario/calendario.css";
 import Calendar from "react-calendar";
 import { useEffect, useState } from "react";
+import arrow from "./assets/arrow.png";
+import arrow_rigth from "./assets/arrow-right.png";
+import Image from "next/image";
 
 export const CalendarioComponent = () => {
   const fechasMarcadas = [
@@ -40,11 +43,16 @@ export const CalendarioComponent = () => {
         <p className="navigate_title">
           {month} {year}
         </p>
-        <button onClick={changeMonthPrevious}>prev</button>
-        <button onClick={changeMonthNext}>next</button>
+        <button onClick={changeMonthPrevious}>
+          <Image src={arrow} alt="icon" height={30} />
+        </button>
+        <button onClick={changeMonthNext}>
+          <Image src={arrow_rigth} alt="icon" height={30} />
+        </button>
       </div>
       <Calendar
-        value={date}
+        className="my-custom-calendar"
+        activeStartDate={date}
         tileClassName={({ date, view }) => {
           // Convertir la fecha a un string en el formato 'YYYY-MM-DD'
           const fechaString = date.toISOString().split("T")[0];

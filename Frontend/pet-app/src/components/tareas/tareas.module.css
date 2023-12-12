@@ -13,10 +13,12 @@
   align-items: center;
   justify-content: flex-start;
   gap: 12px;
-  background-color: #d9d9d9;
+  background-color: #ae7565;
   width: 280px;
-  font-weight: 500;
+  font-weight: 600;
   padding: 5px;
+  border-radius: 20px;
+  color: white;
 }
 .circulo {
   width: 15px;
@@ -40,7 +42,8 @@
 }
 
 .fecha {
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 800;
   margin-left: 15px;
   margin-top: 15px;
 }

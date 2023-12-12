@@ -6,12 +6,14 @@
 }
 
 .asideTareas {
-  height: 100%;
+  height: calc(100vh - 60px);
   background-color: white;
   display: flex;
   flex-direction: column;
   gap: 100px;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 10px;
   align-self: center;
+  border-left: 1px solid black;
+  padding-top: 20px;
 }

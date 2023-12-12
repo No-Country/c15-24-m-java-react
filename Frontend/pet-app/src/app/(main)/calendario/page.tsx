@@ -3,6 +3,7 @@ import { Tareas } from "@/components/tareas/tareas";
 import React from "react";
 import { CalendarioComponent } from "@/components/calendario/calendario";
 import styles from "./page.module.css";
+import { Nunito } from "next/font/google";
 
 const mock = [
   {
@@ -43,9 +44,16 @@ const mockProximas = [
   },
 ];
 
+export const title = Nunito({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
 export default function Calendario() {
   return (
-    <div className={styles.containerCalendarioPage}>
+    <div
+      className={`${styles.containerCalendarioPage} ${title.className} antialiased`}
+    >
       <CalendarioComponent />
       <div className={styles.asideTareas}>
         <Tareas data={mock} />

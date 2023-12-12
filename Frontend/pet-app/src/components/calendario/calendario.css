@@ -1,12 +1,13 @@
 .containerCalendario {
   width: max-content;
   height: calc(100vh - 60px);
-  background-color: blue;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   flex-grow: 1;
+  padding: 25px;
 }
 
 .navigation_calendar {
@@ -14,6 +15,8 @@
   gap: 15px;
   justify-self: flex-start;
   width: 100%;
+  color: black;
+  font-weight: bold;
 }
 
 .navigate_title {
@@ -31,7 +34,6 @@
   /* max-width: 800px; */
   /* background: white; */
   border: 1px solid #a0a096;
-  font-family: Arial, Helvetica, sans-serif;
   /* line-height: 1.125em; */
   color: black;
   /* font-weight: 600; */
@@ -45,8 +47,9 @@
   margin-top: 8px;
   width: 150px;
   height: 90px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  border-radius: 10px;
   font-size: 18px;
   font-weight: bold;
   background-color: #fff;
@@ -125,15 +128,17 @@
 
 /* NOMBRES DIAS */
 .react-calendar__month-view__weekdays__weekday {
-  padding: 0.5em;
+  padding: 5px 15px;
   user-select: none;
-  font-size: 15px;
+  font-size: 18px;
   color: #ae7565;
-  padding: 10px;
   background-color: #fff;
   border-radius: 20px;
   text-decoration: none;
   text-transform: capitalize;
+  font-weight: 800;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .react-calendar__month-view__weekNumbers .react-calendar__tile {
@@ -253,4 +258,12 @@
 
 .react-calendar__month-view__weekdays__weekday abbr {
   text-decoration: none;
+}
+
+.react-calendar__month-view__days {
+}
+
+.my-custom-calendar .react-calendar__month-view__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
 }
