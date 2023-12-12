@@ -3,15 +3,14 @@
   width: calc(100vw - 270px);
   position: fixed;
   left: 270px;
-  background-color: rebeccapurple;
   display: flex;
   justify-content: flex-end;
   z-index: 10;
-  color: white;
+  color: black;
 }
 
 .containerBtns {
   display: flex;
-  gap: 15px;
+  gap: 35px;
   margin-right: 60px;
 }

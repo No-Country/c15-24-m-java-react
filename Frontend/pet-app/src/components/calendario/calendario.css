@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: flex-start;
   flex-grow: 1;
-  padding: 25px;
+  padding: 0 25px;
 }
 
 .navigation_calendar {
@@ -21,11 +21,12 @@
 
 .navigate_title {
   text-transform: capitalize;
-  font-size: 36px;
+  font-size: 32px;
   width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
 }
 
 /* CONTENEDOR */
@@ -130,7 +131,7 @@
 .react-calendar__month-view__weekdays__weekday {
   padding: 5px 15px;
   user-select: none;
-  font-size: 18px;
+  font-size: 20px;
   color: #ae7565;
   background-color: #fff;
   border-radius: 20px;

@@ -27,7 +27,12 @@
 }
 
 .nombreUser {
-  font-size: 30px;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .containerLinks {
@@ -47,6 +52,8 @@
   height: 65px;
   width: 100%;
   cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .link:hover {
@@ -54,8 +61,8 @@
 }
 
 .point {
-  background-color: black;
-  width: 10px;
-  height: 10px;
+  background-color: #ae7565;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
 }

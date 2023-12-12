@@ -44,13 +44,37 @@ export const CalendarioComponent = () => {
           {month} {year}
         </p>
         <button onClick={changeMonthPrevious}>
-          <Image src={arrow} alt="icon" height={30} />
+          {/* <Image src={arrow} alt="icon" height={20} /> */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="15"
+            viewBox="0 0 24 15"
+            fill="none"
+          >
+            <path
+              d="M12 0L0 12L2.82 14.82L12 5.66L21.18 14.82L24 12L12 0Z"
+              fill="#AE7565"
+            />
+          </svg>
         </button>
         <button onClick={changeMonthNext}>
-          <Image src={arrow_rigth} alt="icon" height={30} />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="15"
+            viewBox="0 0 24 15"
+            fill="none"
+          >
+            <path
+              d="M12 0L0 12L2.82 14.82L12 5.66L21.18 14.82L24 12L12 0Z"
+              fill="#AE7565"
+            />
+          </svg>
         </button>
       </div>
       <Calendar
+        calendarType="gregory"
         className="my-custom-calendar"
         activeStartDate={date}
         tileClassName={({ date, view }) => {
