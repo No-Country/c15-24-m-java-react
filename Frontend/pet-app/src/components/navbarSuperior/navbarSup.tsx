@@ -1,8 +1,16 @@
 import styles from "./navbarSup.module.css";
 
-export const NavbarSup = () => {
+interface navbarSupInterface {
+  isInCalendar?: boolean;
+}
+
+export const NavbarSup = ({ isInCalendar = false }: navbarSupInterface) => {
   return (
-    <div className={styles.containerNavSup}>
+    <div
+      className={
+        isInCalendar ? styles.containerNavSupInCalendar : styles.containerNavSup
+      }
+    >
       <div className={styles.containerBtns}>
         <button>
           <svg

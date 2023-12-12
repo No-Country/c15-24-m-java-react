@@ -4,6 +4,7 @@ import React from "react";
 import { CalendarioComponent } from "@/components/calendario/calendario";
 import styles from "./page.module.css";
 import { Nunito } from "next/font/google";
+import { NavbarSup } from "@/components/navbarSuperior/navbarSup";
 
 const mock = [
   {
@@ -56,6 +57,7 @@ export default function Calendario() {
     >
       <CalendarioComponent />
       <div className={styles.asideTareas}>
+        <NavbarSup isInCalendar={true} />
         <Tareas data={mock} />
         <ProximasTareas data={mockProximas} />
       </div>
