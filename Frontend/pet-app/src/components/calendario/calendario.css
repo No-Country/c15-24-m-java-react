@@ -42,9 +42,21 @@
 
 /* NUMEROS */
 .react-calendar__tile:enabled {
+  margin-top: 8px;
   width: 150px;
   height: 90px;
-  font-size: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #fff;
+  position: relative;
+}
+
+.react-calendar__tile:enabled abbr {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 /* /////////////////////////////////////////////////////////// */
@@ -118,8 +130,9 @@
   font-size: 15px;
   color: #ae7565;
   padding: 10px;
-  background-color: grey;
+  background-color: #fff;
   border-radius: 20px;
+  text-decoration: none;
 }
 
 .react-calendar__month-view__weekNumbers .react-calendar__tile {
@@ -235,4 +248,8 @@
   border-radius: 50%;
   top: 5px;
   right: 100;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
 }
