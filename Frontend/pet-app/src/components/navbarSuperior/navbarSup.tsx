@@ -20,7 +20,7 @@ export const NavbarSup = ({ isInCalendar = false }: navbarSupInterface) => {
             viewBox="0 0 48 48"
             fill="none"
           >
-            <g clip-path="url(#clip0_200_331)">
+            <g clipPath="url(#clip0_200_331)">
               <path
                 d="M24 44C26.2 44 28 42.2 28 40H20C20 42.2 21.78 44 24 44ZM36 32V22C36 15.86 32.72 10.72 27 9.36V8C27 6.34 25.66 5 24 5C22.34 5 21 6.34 21 8V9.36C15.26 10.72 12 15.84 12 22V32L8 36V38H40V36L36 32Z"
                 fill="#AE7565"

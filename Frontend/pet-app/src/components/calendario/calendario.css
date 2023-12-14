@@ -9,7 +9,7 @@
 .containerCalendario {
   max-width: 100%;
   height: 100vh;
-  background-color: white;
+  background-color: #fffcf8;
   display: flex;
   flex-direction: column;
   align-items: center;
