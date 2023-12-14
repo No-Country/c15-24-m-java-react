@@ -1,5 +1,13 @@
+.svgLeft {
+  transform: rotate(-90deg);
+}
+
+.svgRigth {
+  transform: rotate(90deg);
+}
+
 .containerCalendario {
-  width: max-content;
+  max-width: 100%;
   height: 100vh;
   background-color: white;
   display: flex;
@@ -7,8 +15,6 @@
   align-items: center;
   justify-content: flex-start;
   flex-grow: 1;
-  padding: 0 25px;
-  padding-top: 30px;
 }
 
 .navigation_calendar {
@@ -32,13 +38,8 @@
 
 /* CONTENEDOR */
 .react-calendar {
-  /* min-height: 300px; */
-  /* max-width: 800px; */
-  /* background: white; */
   border: 1px solid #a0a096;
-  /* line-height: 1.125em; */
   color: black;
-  /* font-weight: 600; */
   padding: 5px 50px;
   background-color: transparent;
   border: none;
@@ -46,9 +47,8 @@
 
 /* NUMEROS */
 .react-calendar__tile:enabled {
-  margin-top: 8px;
-  width: 150px;
-  height: 90px;
+  width: 100px !important;
+  height: 40px !important;
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
     rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   border-radius: 10px;
@@ -65,15 +65,6 @@
 }
 
 /* /////////////////////////////////////////////////////////// */
-
-.react-calendar--doubleView {
-  width: 700px;
-}
-
-.react-calendar--doubleView .react-calendar__viewContainer {
-  display: flex;
-  margin: -0.5em;
-}
 
 .react-calendar--doubleView .react-calendar__viewContainer > * {
   width: 50%;
@@ -126,6 +117,16 @@
   font: inherit;
   font-size: 0.75em;
   font-weight: bold;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.react-calendar__month-view__weekdays abbr {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 /* NOMBRES DIAS */
@@ -158,13 +159,6 @@
 .react-calendar__navigation__next2-button,
 .react-calendar__navigation__prev2-button {
   display: none;
-}
-
-.react-calendar__navigation__label {
-  width: fit-content;
-  padding: 5px 15px;
-  pointer-events: none;
-  user-select: none;
 }
 
 /* DIAS RESTANTES */
@@ -228,9 +222,6 @@
   background: #a9d4ff;
 }
 
-.react-calendar__tile--active {
-}
-
 .react-calendar__tile--active:enabled:hover,
 .react-calendar__tile--active:enabled:focus {
   background: #1087ff;
@@ -249,23 +240,100 @@
 
 .fecha-marcada::after {
   content: "";
-  height: 10px;
-  width: 10px;
-  background-color: red;
+  height: 14px;
+  width: 14px;
+  background-color: rgba(255, 0, 0, 0.729);
   position: absolute;
   border-radius: 50%;
-  top: 5px;
-  right: 100;
+  top: 60%;
+  left: 15px;
+}
+
+.fecha-marcada::before {
+  content: "Tarea";
+  position: absolute;
+  border-radius: 50%;
+  top: 53%;
+  left: 35px;
+  font-weight: 600;
 }
 
 .react-calendar__month-view__weekdays__weekday abbr {
   text-decoration: none;
 }
 
+.my-custom-calendar .react-calendar__month-view__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
 .react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: repeat(7, 1fr) !important;
+  gap: 6px;
+}
+
+/* PHIND */
+
+.containerCalendario {
+  width: min-content;
+}
+
+.react-calendar__viewContainer {
+  width: 100%;
+}
+
+.navigation_calendar {
+  max-width: fit-content;
+}
+
+.containerCalendario {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
 }
 
 .my-custom-calendar .react-calendar__month-view__days {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 6px;
+}
+
+.react-calendar__tile:enabled {
+  width: 100%;
+  height: 90px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #fff;
+  position: relative;
+}
+
+.containerComp {
+  width: 100%;
+  padding-top: 40px;
+}
+
+.react-calendar__tile:enabled {
+  width: 100% !important;
+  height: 90px !important;
+  /* Ajusta esta línea */
+}
+
+/* DIA ACTUAL SELECTED AUTO */
+.react-calendar__tile--now:enabled,
+.react-calendar__tile--now:enabled:focus {
+  background: #ae7565;
+  color: white;
+}
+
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #ca9687;
+  color: white;
 }
