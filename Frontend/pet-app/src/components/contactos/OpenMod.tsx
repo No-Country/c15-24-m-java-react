@@ -1,8 +1,6 @@
 'use client'
 
 import React, { useState } from 'react'
-import Modal from './Modal'
-import FormUser from './FormUser'
 
 export const OpenMod = () => {
 
@@ -10,12 +8,9 @@ export const OpenMod = () => {
 
   return (
       <>
-        <Modal
-            isModalOpen={isModalOpen}
-            setIsModalOpen={setIsModalOpen}
-        > 
-            <FormUser />
-        </Modal>
+  
+       
+
     
             <button 
                 onClick={() => setIsModalOpen(!isModalOpen)}
