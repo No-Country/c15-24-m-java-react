@@ -22,9 +22,19 @@ public class MascotaController {
 
     @PostMapping
     public ResponseEntity<DatosRespuestaMascota> registrarMascota(
-            @RequestBody @Valid DatosRegistroMascota datosRegistroMascota, UriComponentsBuilder uriComponentsBuilder) {
+            @RequestBody @Valid
+            DatosRegistroMascota datosRegistroMascota,
+            UriComponentsBuilder uriComponentsBuilder) {
         Mascota mascota = mascotaRepository.save(new Mascota(datosRegistroMascota));
-        DatosRespuestaMascota datosRespuestaMascota = new DatosRespuestaMascota(mascota.getId(), mascota.getNombre(), mascota.getApellido(), mascota.getEdad(), mascota.getSexo(), mascota.getEspecie());
+        DatosRespuestaMascota datosRespuestaMascota = new DatosRespuestaMascota(
+                mascota.getId(),
+                mascota.getNombre(),
+                mascota.getEspecie(),
+                mascota.getRaza(),
+                mascota.getColor(),
+                mascota.getEdad(),
+                mascota.getSexo()
+        );
 
         URI url = uriComponentsBuilder.path("/mascotas/{id}").buildAndExpand(mascota.getId()).toUri();
         return ResponseEntity.created(url).body(datosRespuestaMascota);
@@ -41,7 +51,15 @@ public class MascotaController {
     public ResponseEntity actualizarMascota(@RequestBody @Valid DatosActualizarMascota datosActualizarMascota) {
         Mascota mascota = mascotaRepository.getReferenceById(datosActualizarMascota.id());
         mascota.actualizarDatos(datosActualizarMascota);
-        return ResponseEntity.ok(new DatosRespuestaMascota(mascota.getId(), mascota.getNombre(), mascota.getApellido(), mascota.getEdad(), mascota.getSexo(), mascota.getEspecie())); //Especie???
+        return ResponseEntity.ok(new DatosRespuestaMascota(
+                mascota.getId(),
+                mascota.getNombre(),
+                mascota.getEspecie(),
+                mascota.getRaza(),
+                mascota.getColor(),
+                mascota.getEdad(),
+                mascota.getSexo()
+        ));
     }
 
     //DELETE LOGICO
@@ -56,7 +74,15 @@ public class MascotaController {
     @GetMapping("/{id}")
     public ResponseEntity<DatosRespuestaMascota> retornaDatosMascota(@PathVariable Long id) {
         Mascota mascota = mascotaRepository.getReferenceById(id);
-        var datosMascota = new DatosRespuestaMascota(mascota.getId(), mascota.getNombre(), mascota.getApellido(), mascota.getEdad(), mascota.getSexo(), mascota.getEspecie());
+        var datosMascota = new DatosRespuestaMascota(
+                mascota.getId(),
+                mascota.getNombre(),
+                mascota.getEspecie(),
+                mascota.getRaza(),
+                mascota.getColor(),
+                mascota.getEdad(),
+                mascota.getSexo()
+        );
         return ResponseEntity.ok(datosMascota);
     }
 

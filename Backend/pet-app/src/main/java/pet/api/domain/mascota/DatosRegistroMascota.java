@@ -8,13 +8,16 @@ public record DatosRegistroMascota(
         @NotBlank
         String nombre,
         @NotBlank
-        String apellido,
+        String especie,
         @NotBlank
-        String edad,
+        String raza,
         @NotBlank
-        String sexo,
+        String color,
         @NotNull
-        Especie especie
+        int edad,
+        @NotBlank
+        String sexo
+
 ) {
 
 }
