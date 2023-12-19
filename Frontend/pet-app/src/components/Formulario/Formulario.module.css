@@ -29,7 +29,7 @@
  border-radius: 20px;
  padding: 30px;
  max-width: 920px;
-height: 700px;
+height: 100%;
 display: flex;
 align-items: center;
  flex-wrap: wrap;
