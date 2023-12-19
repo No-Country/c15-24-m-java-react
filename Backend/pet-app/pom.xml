@@ -8,11 +8,11 @@
 		<version>3.2.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.c15-24-m</groupId>
-	<artifactId>pet-app</artifactId>
+	<groupId>com.petnotes.api</groupId>
+	<artifactId>pet-notes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>pet-app</name>
-	<description>Spring Boot app for No Country</description>
+	<name>Pet Notes Web App</name>
+	<description>API para la web de PET NOTES, una aplicación para registrar los datos para el cuidado de mascotas; un proyecto para No Country</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

@@ -1,5 +1,7 @@
 package pet.api.domain.mascota;
 
+import pet.api.domain.historial.ClinicalHistory;
+
 public record DatosRespuestaMascota (
         Long id,
         String nombre,
@@ -7,6 +9,7 @@ public record DatosRespuestaMascota (
         String raza,
         String color,
         int edad,
-        String sexo
+        String sexo,
+        ClinicalHistory clinicalHistory
 ){
 }

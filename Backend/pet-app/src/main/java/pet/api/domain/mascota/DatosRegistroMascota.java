@@ -2,6 +2,7 @@ package pet.api.domain.mascota;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import pet.api.domain.historial.ClinicalHistory;
 
 public record DatosRegistroMascota(
 
@@ -16,7 +17,8 @@ public record DatosRegistroMascota(
         @NotNull
         int edad,
         @NotBlank
-        String sexo
+        String sexo,
+        ClinicalHistory clinicalHistory
 
 ) {
 
