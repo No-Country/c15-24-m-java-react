@@ -8,3 +8,14 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+body{
+  background:  #FFFCF8;
+}
+
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+
+
+}

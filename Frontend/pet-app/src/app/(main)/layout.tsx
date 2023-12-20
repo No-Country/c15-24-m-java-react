@@ -20,10 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
-        <Navbar></Navbar>
-        <NavbarSup isInCalendar={true} />
-        <ContainerMain isActive={true}>{children}</ContainerMain>
+      <body className={inter.className}>
+        <DataProvider>
+          <Navbar></Navbar>
+          <NavbarSup />
+          <ContainerMain>{children}</ContainerMain>
+        </DataProvider>
       </body>
     </html>
   );
