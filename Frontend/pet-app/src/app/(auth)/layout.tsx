@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "../../app/globals.css";
 
 
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pet App",
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-         <main className="min-h-screen grid grid-cols-1 p-5 lg:p-8">  
+         <main className="min-h-screen grid grid-cols-1"> 
             {children}
         </main>  
       </body>

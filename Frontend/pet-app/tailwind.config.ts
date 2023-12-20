@@ -11,8 +11,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#b91c1c',
-        secondary: '#44403c',
+        primary: '#BFDBFE',
+        Acento: '#fda4af',
+        secundario1: '#AE7565',
+        secundario2: '#5B5B5B', 
+
       },
     },
   },

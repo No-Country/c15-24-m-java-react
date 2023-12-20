@@ -8,7 +8,7 @@ export const BtnRegistrar = () => {
     const router = useRouter();
 
   return (
-    <button type="button" className='text-grey-500 font-semibold flex gap-x-2 mb-5' onClick={() => router.push('/register')}>
+    <button type="button" className='w-full bg-secundario1 text-white py-3 px-4 rounded-xl mb-5 boder-2 border-transparent hover:bg-transparent hover:border-secundario2 hover:text-secundario2 transition-colors duration-300' onClick={() => router.push('/register')}>
             Quiero registarme
     </button>
   )
