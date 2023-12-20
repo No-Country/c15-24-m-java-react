@@ -1,7 +1,7 @@
 import close from "../../../../public/images/Close.svg";
 import tres from "../../../../public/images/tresPuntos.svg";
 import styles from "../NuevoGasto.module.css";
-import { ControladorProps } from "@/components/interface/interface";
+import { ControladorProps } from "../../interface/interface";
 import Image from "next/image";
 
 
