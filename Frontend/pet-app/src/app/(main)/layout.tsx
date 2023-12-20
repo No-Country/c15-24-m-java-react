@@ -4,8 +4,8 @@ import "../../app/globals.css";
 import { Navbar } from "../../components/navbar/navbar";
 import { ContainerMain } from "../../components/containerMain/containerMain";
 import { NavbarSup } from "@/components/navbarSuperior/navbarSup";
-
-const nunito = Nunito({ subsets: ["latin"] });
+import { DataProvider } from "@/components/Context/DataContext";
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pet App",
@@ -20,10 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={nunito.className}>
-        <Navbar></Navbar>
-        <NavbarSup isInCalendar={true} />
-        <ContainerMain isActive={true}>{children}</ContainerMain>
+      <body className={inter.className}>
+        <DataProvider>
+          <Navbar></Navbar>
+          <NavbarSup />
+          <ContainerMain>{children}</ContainerMain>
+        </DataProvider>
       </body>
     </html>
   );
