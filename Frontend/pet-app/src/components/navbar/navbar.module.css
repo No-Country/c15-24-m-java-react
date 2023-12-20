@@ -18,6 +18,7 @@
   height: 60px;
   background-color: gray;
   border-radius: 10px;
+  object-fit: cover;
 }
 
 .imgUser {
@@ -66,4 +67,17 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
+}
+
+.buttonLogout {
+  border-radius: 5px;
+  background-color: #98bef6;
+  padding: 5px 10px;
+  color: white;
+  margin-top: 100px;
+}
+
+.buttonLogout:hover {
+  transform: scale(1.1);
+  transition: all 0.05s ease-in;
 }

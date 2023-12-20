@@ -1,6 +1,8 @@
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import { Nunito } from "next/font/google";
+import Image from "next/image";
+import logo from "../../../public/images/logopets.png";
 
 export const title = Nunito({
   subsets: ["latin"],
@@ -10,7 +12,7 @@ export const title = Nunito({
 export const Navbar = () => {
   return (
     <div className={`${styles.containerNav} ${title.className}`}>
-      <img className={styles.imgLogo} src="" alt="logo" />
+      <Image className={styles.imgLogo} src={logo} alt="logo" />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="180"
@@ -92,6 +94,8 @@ export const Navbar = () => {
           <p className={styles.linkText}>Contactos</p>
         </Link> */}
       </ul>
+
+      <button className={styles.buttonLogout}>Cerrar session</button>
     </div>
   );
 };
