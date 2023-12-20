@@ -4,9 +4,9 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    "react-app",
     "eslint:recommended",
     "plugin:react/recommended",
-    "react-app",
     "plugin:prettier/recommended",
   ],
   overrides: [

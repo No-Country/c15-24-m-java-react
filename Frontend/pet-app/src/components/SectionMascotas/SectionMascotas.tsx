@@ -86,7 +86,6 @@ export const SectionMascotas = () => {
     notas: string;
     completed: boolean;
     id: string;
-    
   }
 
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -280,7 +279,7 @@ export const SectionMascotas = () => {
                         styles.bgShadow
                       } shadow-2xl p-3 rounded-3xl ${
                         acordeonAbierto[idUnico as keyof typeof acordeonAbierto]
-                          ? "grid grid-cols-1"  // Cuando el acordeón está abierto, cambia a una sola columna
+                          ? "grid grid-cols-1" // Cuando el acordeón está abierto, cambia a una sola columna
                           : "grid sm:grid-cols-1 md:grid-cols-3 " // Cuando está cerrado, utiliza tres columnas
                       } ${
                         acordeonAbierto[idUnico as keyof typeof acordeonAbierto]
@@ -515,8 +514,6 @@ export const SectionMascotas = () => {
                                 {/* CARD CONTACT */}
 
                                 <CardContact />
-
-                                
                               </div>
                             </div>
                           </div>

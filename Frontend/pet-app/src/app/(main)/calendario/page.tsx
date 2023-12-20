@@ -45,16 +45,14 @@ const mockProximas = [
   },
 ];
 
-export const title = Nunito({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-});
+// export const title = Nunito({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700", "800", "900"],
+// });
 
 export default function Calendario() {
   return (
-    <div
-      className={`${styles.containerCalendarioPage} ${title.className} antialiased`}
-    >
+    <div className={`${styles.containerCalendarioPage}  antialiased`}>
       <CalendarioComponent />
       <div className={styles.asideTareas}>
         <NavbarSup isInCalendar={true} />
