@@ -1,9 +1,11 @@
 HELP.md
-target/classes/pet/
+target/classes/
 target/maven-archiver/
 target/maven-status/
 target/surefire-reports/
-target/test-classes/pet/
+target/generated-sources/
+target/generated-test-sources/
+target/test-classes/
 
 ### STS ###
 .apt_generated
