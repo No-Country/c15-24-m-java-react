@@ -57,7 +57,6 @@ export default function Calendario() {
     >
       <CalendarioComponent />
       <div className={styles.asideTareas}>
-        <NavbarSup isInCalendar={true} />
         <Tareas data={mock} />
         <ProximasTareas data={mockProximas} />
       </div>

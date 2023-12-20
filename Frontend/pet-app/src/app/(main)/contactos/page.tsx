@@ -5,6 +5,7 @@ import { familia, veterinarios } from "@/components/contactos/data/data";
 import { cuidadores } from "@/components/contactos/data/data";
 import { OpenMod } from "@/components/contactos/OpenMod";
 import { NuevoGasto } from "@/components/NuevoGasto/NuevoGasto";
+import { Navbar } from "@/components/navbar/navbar";
 
 export const metadata = {
   title: "Agenda de contactos",
@@ -13,19 +14,22 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="container w-10/12 mx-auto mt-20 flex flex-col mb-20">
-      <h1 className="text-5xl">Contactos</h1>
+    <>
+      <Navbar></Navbar>
+      <div className="container w-10/12 mx-auto mt-20 flex flex-col mb-20">
+        <h1 className="text-5xl">Contactos</h1>
 
-      <div className="mt-10 lg:grid grid-cols-2 gap-8">
-        <div>
-          <Veterinarios data={veterinarios} />
-          <Cuidadores data={cuidadores} />
+        <div className="mt-10 lg:grid grid-cols-2 gap-8">
+          <div>
+            <Veterinarios data={veterinarios} />
+            <Cuidadores data={cuidadores} />
+          </div>
+          <Familia data={familia} />
+
+          <OpenMod />
         </div>
-        <Familia data={familia} />
-
-        <OpenMod />
+        <NuevoGasto />
       </div>
-      <NuevoGasto />
-    </div>
+    </>
   );
 }
