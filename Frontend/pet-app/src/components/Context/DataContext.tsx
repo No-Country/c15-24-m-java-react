@@ -21,6 +21,8 @@ interface DataContextProps {
 
   image:any,
   setImage:any,
+  setCards: React.Dispatch<React.SetStateAction<Animal[]>>;
+  
 
 }
 
@@ -93,7 +95,8 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
         addGasto,
         setAddgasto,
         image,
-        setImage
+        setImage,
+        setCards
       }}
     >
       {children}

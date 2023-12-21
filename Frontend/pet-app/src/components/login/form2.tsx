@@ -9,7 +9,7 @@ const Form2 = () => {
         </h2>
       </div>
       <form className="w-full">
-        <Input type="text" placeholder="Email" />
+        <Input  type="text" placeholder="Email" />
         
         <div className="flex justify-end ">
           <button type="button" className="text-grey-500">

@@ -11,7 +11,7 @@ export interface Animal {
     alergias: string;
     mensaje:string;
     idUnico?:string;
-  
+    tasks?: Task[]; // Añade esta línea
 
    
   }
@@ -27,6 +27,17 @@ export interface TareasInterface {
  id?:string
 
  
+}
+
+export interface Task {
+  fecha: string;
+  hora: string;
+  mascota: string;
+  recordatorio: string;
+  notas: string;
+  completed: boolean;
+  id: string;
+  
 }
 
   

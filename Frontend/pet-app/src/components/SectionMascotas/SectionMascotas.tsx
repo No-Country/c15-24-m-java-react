@@ -18,6 +18,8 @@ import Formulario from "../Formulario/Formulario";
 import Controlador from "../NuevoGasto/Controlador/Controlador";
 import redondo from "../../../public/images/redondo.svg";
 import { TareasInterface } from "../interface/interface";
+
+
 // fonts
 const nunito = Nunito({
   subsets: ["latin"],
