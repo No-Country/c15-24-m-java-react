@@ -1,5 +1,5 @@
 import Input from "@/components/login/input";
-import { Nunito } from "next/font/google"
+import { Nunito } from "next/font/google";
 
 export const title = Nunito({
   subsets: ["latin"],
@@ -15,12 +15,15 @@ const Form3 = () => {
         </h2>
       </div>
       <form className="w-full">
-        <Input type="text" placeholder="Nombre" />
+        {/* <Input type="text" placeholder="Nombre" />
         <Input type="password" placeholder="Password" />
         <Input type="text" placeholder="Telefono" />
-        <Input type="email" placeholder="Email" />
+        <Input type="email" placeholder="Email" /> */}
         <div className="flex justify-end ">
-          <button type="button" className="w-full bg-secundario2 text-grey py-3 px-4 rounded-xl mb-5 border-2 border-transparent hover:bg-transparent hover:border-secundario2 transition-colors duration-300">
+          <button
+            type="button"
+            className="w-full bg-secundario2 text-grey py-3 px-4 rounded-xl mb-5 border-2 border-transparent hover:bg-transparent hover:border-secundario2 transition-colors duration-300"
+          >
             Registrar
           </button>
         </div>

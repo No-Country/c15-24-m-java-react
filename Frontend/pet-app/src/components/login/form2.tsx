@@ -15,10 +15,13 @@ const Form2 = () => {
         </h2>
       </div>
       <form className="w-full">
-        <Input type="text" placeholder="Email" />
-        
+        {/* <Input type="text" placeholder="Email" /> */}
+
         <div className="flex justify-end ">
-          <button type="button" className='w-full bg-secundario2 text-grey py-3 px-4 rounded-xl mb-5 border-2 border-transparent hover:bg-transparent hover:border-secundario2 transition-colors duration-300'>
+          <button
+            type="button"
+            className="w-full bg-secundario2 text-grey py-3 px-4 rounded-xl mb-5 border-2 border-transparent hover:bg-transparent hover:border-secundario2 transition-colors duration-300"
+          >
             Recuperar
           </button>
         </div>
