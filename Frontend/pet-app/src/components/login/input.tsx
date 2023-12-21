@@ -5,12 +5,13 @@ import { cn } from "@/utils/utils";
 import { RiLockLine, RiLockUnlockLine } from "react-icons/ri";
 
 interface InputProps {
-  type: "text" | "password" | "email" ;
+  type: "text" | "password" | "email";
   placeholder: string;
   className?: string;
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
 }
 
-const Input: FC<InputProps> = ({ type, placeholder, className }) => {
+const Input: FC<InputProps> = ({ type, placeholder, className, onChange }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
@@ -21,7 +22,6 @@ const Input: FC<InputProps> = ({ type, placeholder, className }) => {
           "bg-gray-100 w-full py-3 pl-4 pr-12 outline-none rounded-xl",
           className
         )}
-        placeholder={placeholder}
       />
       {type === "password" && (
         <button

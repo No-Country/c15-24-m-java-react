@@ -95,7 +95,9 @@ export const Navbar = () => {
         </Link> */}
       </ul>
 
-      <button className={styles.buttonLogout}>Cerrar session</button>
+      <Link href="/login" className={styles.buttonLogout}>
+        Cerrar session
+      </Link>
     </div>
   );
 };
