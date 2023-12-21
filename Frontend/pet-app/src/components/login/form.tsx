@@ -18,7 +18,7 @@ const Form = () => {
       <form className="w-full">
         {/* <Input type="text" placeholder="Email" />
         <Input type="password" placeholder="Password" /> */}
-        <Button type="submit" label="Login" />
+        {/* <Button type="submit" label="Login" /> */}
       </form>
       <div className="flex flex-col items-end mt-4">
         <BtnRecuperar />
