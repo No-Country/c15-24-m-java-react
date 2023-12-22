@@ -9,7 +9,7 @@ import { NavbarSup } from "@/components/navbarSuperior/navbarSup";
 
 const mock = [
   {
-    tarea: "Banar",
+    tarea: "Bañar",
     isCheck: false,
     id: "alksdjf-asdlfkja",
   },
