@@ -44,6 +44,8 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
 
   const [data, setData] = useState<Animal | null>(null);
   const [cards, setCards] = useState<Animal[]>([]);
+
+
   const [alerta, setAlerta] = useState<boolean>(false);
   const [addGasto, setAddgasto] = useState<boolean>(false);
 
@@ -61,10 +63,15 @@ export const DataProvider: React.FC<DataProviderProps> = ({ children }) => {
    
   };
 
+
+
   const deleteCard = (id: string) => {
     const cardId = cards.filter((cardFilter) => cardFilter.idUnico !== id);
     setCards(cardId);
   };
+
+  
+
 
   const editCard = (id: string | void) => {
     if (typeof id === "string") {
