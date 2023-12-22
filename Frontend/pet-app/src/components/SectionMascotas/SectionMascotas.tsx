@@ -60,6 +60,7 @@ export const Card: React.FC<CardProps> = ({
 }) => {
   const { data, cards, deleteCard, addCard, setAddgasto, addGasto, image } =
     useDataContext();
+  
 
   const [generarDiv, setGenerarDiv] = useState<{ [key: string]: boolean }>({});
   const [acordeonAbierto, setAcordeonAbierto] = useState<
@@ -79,6 +80,10 @@ export const Card: React.FC<CardProps> = ({
   const [tasks, setTasks] = useState<Task[]>([]);
 
   const [mostrarTareas, setMostrarTareas] = useState<boolean>(false);
+
+  
+
+
 
   const abrirModal = () => {
     console.log(modalTasks);
@@ -133,12 +138,15 @@ export const Card: React.FC<CardProps> = ({
       { ...dataTarea, id, completed: false },
     ]);
 
+  
     // cerrar modal
 
     setModalTasks(!modalTasks);
 
     //
   };
+
+
 
   const toggleAcordeon = (id: string): void => {
     setAcordeonAbierto((prevState) => ({
@@ -147,6 +155,12 @@ export const Card: React.FC<CardProps> = ({
     }));
     setMostrarTareas(false);
   };
+
+
+
+
+
+
 
   return (
     <div key={idUnico}>
@@ -437,10 +451,20 @@ export const Card: React.FC<CardProps> = ({
 export const SectionMascotas = () => {
   const { data, cards, deleteCard, addCard, setAddgasto, addGasto, image } =
     useDataContext(); // OBJETO DEL FORMULARIO : ESPECIE;RAZA,COLOR,etc
+
+   
   const [generarDiv, setGenerarDiv] = useState<{ [key: string]: boolean }>({});
   const [showAddedAlert, setShowAddedAlert] = useState<boolean>(false); // Estado para la alerta
   const [modalTasks, setModalTasks] = useState<boolean>(false);
 
+    
+  const [isLoading, setIsLoading] = useState <boolean> (false);
+
+const showAddAlert = async () => {
+  setIsLoading(true);
+  // Aquí va el código de tu función
+  setIsLoading(false);
+ };
   const [dataTarea, setDataTarea] = useState<TareasInterface>({
     fecha: "",
     hora: "",
@@ -648,6 +672,10 @@ export const SectionMascotas = () => {
               Aún no se han registrado mascota
             </h2>
           )}
+
+            
+
+
 
           {showAddedAlert && (
             <div className="bg-green-500  text-white py-2 px-4 rounded-md shadow-md">
