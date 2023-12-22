@@ -1,4 +1,5 @@
 "use client";
+import { redirect } from "next/navigation";
 import { BtnRecuperar } from "./BtnRecuperar";
 import { BtnRegistrar } from "./BtnRegistrar";
 import { useState } from "react";

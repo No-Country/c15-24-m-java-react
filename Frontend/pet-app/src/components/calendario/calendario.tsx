@@ -8,11 +8,16 @@ import arrow_rigth from "./assets/arrow-right.png";
 import Image from "next/image";
 
 export const CalendarioComponent = () => {
-  const fechasMarcadas = [
-    "2024-01-01",
-    "2024-02-14",
-    "2024-12-25",
-    "2024-04-16",
+  const [fechas, setFechas] = useState([]);
+
+  let fechasMarcadas = [
+    "2023-12-22",
+    "2023-12-13",
+    "2023-12-04",
+    "2023-12-01 ",
+    "2024-01-06",
+    "2023-12-25",
+    "2023-12-28",
   ];
 
   const [date, setDate] = useState(new Date());
