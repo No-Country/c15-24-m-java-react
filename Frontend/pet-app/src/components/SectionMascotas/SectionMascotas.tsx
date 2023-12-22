@@ -24,16 +24,16 @@ const nunito = Nunito({
 });
 
 interface CardProps {
-  idUnico: string | undefined;
-  nombre: string;
-  color: string;
-  especie: string;
-  sexo: string;
-  edad: number;
-  raza: string;
-  esterilizado: string;
-  alergias: string;
-  tratamiento: string;
+  idUnico?: string | undefined;
+  nombre?: string;
+  color?: string;
+  especie?: string;
+  sexo?: string;
+  edad?: number;
+  raza?: string;
+  esterilizado?: string;
+  alergias?: string;
+  tratamiento?: string;
 }
 
 interface Task {
@@ -86,7 +86,7 @@ export const Card: React.FC<CardProps> = ({
 
 
   const abrirModal = () => {
-    console.log(modalTasks);
+
     setModalTasks(!modalTasks);
   };
 
@@ -686,6 +686,10 @@ const showAddAlert = async () => {
           )}
 
           {/* Card*/}
+
+          <Card
+         
+  />
 
           {cards &&
             cards.map(
