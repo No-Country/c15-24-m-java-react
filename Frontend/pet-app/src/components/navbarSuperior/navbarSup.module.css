@@ -1,0 +1,26 @@
+.containerNavSup {
+  height: 60px;
+  width: calc(100vw - 270px);
+  position: fixed;
+  left: 270px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+  color: black;
+}
+
+.containerNavSupInCalendar {
+  height: 60px;
+  width: 100%;
+  left: 270px;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+  color: black;
+}
+
+.containerBtns {
+  display: flex;
+  gap: 35px;
+  margin-right: 60px;
+}
