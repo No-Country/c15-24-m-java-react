@@ -18,7 +18,7 @@ const Form = () => {
 
   function login(data: object) {
     const jsonString = JSON.stringify(data);
-    fetch("/api/login", {
+    fetch("https://pet-notes-api.onrender.com/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -30,7 +30,7 @@ const Form = () => {
       .then((data) => {
         console.log(data);
         if (data.message === "Login successful") {
-          router.push("/calendario");
+          router.push("/mascotas");
         } else {
           router.push("/login");
         }

@@ -31,7 +31,7 @@ const FormularioLogin: React.FC<PropsLogin> = ({ login }) => {
           <input
             type="password"
             className="bg-gray-100 w-full py-3 pl-4 pr-12 outline-none rounded-xl"
-            placeholder="Password"
+            placeholder="Contraseña"
             onChange={(e) => {
               setPassword(e.target.value);
             }}
