@@ -1,0 +1,20 @@
+.containerMain {
+  color: white;
+  position: absolute;
+  left: 270px;
+  top: 60px;
+  width: calc(100vw - 270px);
+  background-color: red;
+  height: fit-content;
+}
+
+.containerMainInCalendar {
+  color: white;
+  position: absolute;
+  left: 270px;
+  width: calc(100vw - 270px);
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
